@@ -36,8 +36,8 @@ logging.getLogger().addHandler(console)
 
 # Coupon generator
 def generate_coupon():
-    fixed = "K6GLNG7"
-    random_part = ''.join(random.choices(string.ascii_uppercase, k=5))
+    fixed = "K6GLNG"
+    random_part = ''.join(random.choices(string.ascii_uppercase, k=6))
     coupon = fixed + random_part
     logging.info(f"🎟️ Generated Coupon: {coupon}")
     return coupon
